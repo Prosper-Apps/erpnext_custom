@@ -151,5 +151,22 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Leave Application",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "status",
+  "modified": "2021-03-13 11:19:26.329820",
+  "name": "Leave Application-status-options",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "options",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "Open\nRecommended for Approval\nApproved\nRejected\nCancelled"
  }
 ]
