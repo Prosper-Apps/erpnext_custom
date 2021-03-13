@@ -12,13 +12,6 @@ app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
 fixtures = [
-    {"dt": "DocType", "filters": [
-        [
-            "name", "in", [
-                "Employee"
-            ]
-        ]
-    ]},
     {"dt": "Property Setter", "filters": [
         [
             "doc_type", "in", [
