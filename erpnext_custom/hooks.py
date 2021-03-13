@@ -18,7 +18,8 @@ fixtures = [
                 "Employee",
                 "Leave Application",
                 "Leave Type",
-                "Training Event"
+                "Training Event",
+                "Vehicle"
             ]
         ]
     ]},
@@ -28,14 +29,20 @@ fixtures = [
                 "assumption_of_duty",
                 "acceptance_date",
                 "reports_to_name",
-                "age"
+                "age",
+                "employee_name",
+                "year",
+                "type",
+                "tyre_type",
+                "cloumn_break_7"
             ]
         ]
     ]},
     {"dt": "Custom Script", "filters": [
         [
             "name", "in", [
-                "Employee-Client"
+                "Employee-Client",
+                "Vehicle-Client"
             ]
         ]
     ]}
