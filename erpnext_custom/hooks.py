@@ -11,16 +11,7 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = ["Workflow","Workflow State","Custom Field", "Property Setter","Custom Script", "Custom Form", "Print Format",
-    {"dt": "DocType", "filters": [
-        [
-            "name", "in", [
-                "Employee",
-                "Leave Application"
-            ]
-        ]
-    ]}
-]
+fixtures = ["DocType","Workflow","Workflow State","Custom Field", "Property Setter","Custom Script", "Custom Form", "Print Format"]
 
 # Includes in <head>
 # ------------------
