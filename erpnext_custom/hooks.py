@@ -15,7 +15,8 @@ fixtures = ["Custom Script",
     {"dt": "Property Setter", "filters": [
         [
             "doc_type", "in", [
-                "Employee"
+                "Employee",
+                "Leave Application"
             ]
         ]
     ]},
