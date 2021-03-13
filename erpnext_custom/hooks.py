@@ -28,6 +28,13 @@ fixtures = ["Custom Script",
                 "age"
             ]
         ]
+    ]},
+    {"dt": "Custom Script", "filters": [
+        [
+            "name", "in", [
+                "Employee-Client"
+            ]
+        ]
     ]}
 ]
 
