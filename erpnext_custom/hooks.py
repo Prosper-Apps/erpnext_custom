@@ -11,7 +11,7 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = [
+fixtures = ["Custom Script",
     {"dt": "Property Setter", "filters": [
         [
             "doc_type", "in", [
@@ -24,7 +24,8 @@ fixtures = [
             "fieldname", "in", [
                 "assumption_of_duty",
                 "acceptance_date",
-                "reports_to_name"
+                "reports_to_name",
+                "age"
             ]
         ]
     ]}
