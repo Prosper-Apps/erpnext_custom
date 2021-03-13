@@ -11,22 +11,22 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = [
+fixtures = ["Custom Field",
     {"dt": "Property Setter", "filters": [
         [
             "doc_type", "in", [
                 "Employee"
             ]
         ]
-    ]},
-    {"dt": "Custom Field", "filters": [
-        [
-            "name", "in", [
-                "assumption_of_duty",
-                "acceptance_date"
-            ]
-        ]
     ]}
+    # {"dt": "Custom Field", "filters": [
+    #     [
+    #         "name", "in", [
+    #             "assumption_of_duty",
+    #             "acceptance_date"
+    #         ]
+    #     ]
+    # ]}
 ]
 
 # Includes in <head>
