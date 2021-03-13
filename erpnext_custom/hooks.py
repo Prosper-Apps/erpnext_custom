@@ -11,7 +11,7 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = [
+fixtures = ["Property Setter",
     {"dt": "DocType", "filters": [
         [
             "name", "in", [
