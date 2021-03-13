@@ -11,7 +11,7 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = ["Custom Script",
+fixtures = ["DocType",
     {"dt": "Property Setter", "filters": [
         [
             "doc_type", "in", [
