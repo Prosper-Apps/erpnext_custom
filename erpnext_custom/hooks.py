@@ -17,7 +17,8 @@ fixtures = [
             "doc_type", "in", [
                 "Employee",
                 "Leave Application",
-                "Leave Type"
+                "Leave Type",
+                "Training Event"
             ]
         ]
     ]},
