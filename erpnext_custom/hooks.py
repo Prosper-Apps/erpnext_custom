@@ -16,7 +16,8 @@ fixtures = ["Custom Script",
         [
             "doc_type", "in", [
                 "Employee",
-                "Leave Application"
+                "Leave Application",
+                "Leave Type"
             ]
         ]
     ]},
