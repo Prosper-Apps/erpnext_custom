@@ -11,10 +11,17 @@ app_color = "blue"
 app_email = "social@ncc.gov.gh"
 app_license = "MIT"
 
-fixtures = ["Property Setter",
+fixtures = [
     {"dt": "DocType", "filters": [
         [
             "name", "in", [
+                "Employee"
+            ]
+        ]
+    ]},
+    {"dt": "Property Setter", "filters": [
+        [
+            "doc_type", "in", [
                 "Employee"
             ]
         ]
