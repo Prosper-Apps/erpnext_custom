@@ -34,6 +34,7 @@ fixtures = [
                 "year",
                 "type",
                 "tyre_type",
+                "image",
                 "cloumn_break_7"
             ]
         ]
