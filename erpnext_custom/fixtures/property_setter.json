@@ -22,23 +22,6 @@
   "docstatus": 0,
   "doctype": "Property Setter",
   "doctype_or_field": "DocField",
-  "field_name": "employee",
-  "modified": "2021-03-13 17:00:19.134505",
-  "name": "Vehicle-employee-depends_on",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "property": "depends_on",
-  "property_type": "Data",
-  "row_name": null,
-  "value": "eval:doc.status == \"Assigned\""
- },
- {
-  "default_value": null,
-  "doc_type": "Vehicle",
-  "docstatus": 0,
-  "doctype": "Property Setter",
-  "doctype_or_field": "DocField",
   "field_name": "carbon_check_date",
   "modified": "2021-03-13 19:04:31.817121",
   "name": "Vehicle-carbon_check_date-hidden",
@@ -355,5 +338,22 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Vehicle",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "employee",
+  "modified": "2021-03-20 19:08:55.530681",
+  "name": "Vehicle-employee-depends_on",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "depends_on",
+  "property_type": "Data",
+  "row_name": null,
+  "value": "eval:doc.status == \"Assigned to Employee\""
  }
 ]
