@@ -35,7 +35,9 @@ fixtures = [
                 "type",
                 "tyre_type",
                 "image",
-                "cloumn_break_7"
+                "cloumn_break_7",
+                "section_break_4",
+                "department"
             ]
         ]
     ]},
