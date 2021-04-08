@@ -40,16 +40,15 @@ fixtures = [
                 "department"
             ]
         ]
+    ]},
+    {"dt": "Client Script", "filters": [
+        [
+            "name", "in", [
+                "Employee-Client",
+                "Vehicle-Client"
+            ]
+        ]
     ]}
-    #]},
-    #{"dt": "Custom Script", "filters": [
-    #    [
-    #        "name", "in", [
-    #            "Employee-Client",
-    #            "Vehicle-Client"
-    #        ]
-    #    ]
-    #]}
 ]
 
 # Includes in <head>
