@@ -102,6 +102,9 @@ fixtures = [
 # before_install = "erpnext_custom.install.before_install"
 # after_install = "erpnext_custom.install.after_install"
 
+# After migration
+after_migrate = "erpnext_custom.app.company_name"
+
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
