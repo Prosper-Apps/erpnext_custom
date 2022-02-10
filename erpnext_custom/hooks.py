@@ -38,7 +38,7 @@ fixtures = [
                 "column_break_7",
                 "section_break_4",
                 "department",
-                "employee_name",
+                "employee_number",
                 "staff_id"
             ]
         ]
