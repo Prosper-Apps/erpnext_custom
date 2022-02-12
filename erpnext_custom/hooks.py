@@ -46,8 +46,9 @@ fixtures = [
     {"dt": "Client Script", "filters": [
         [
             "name", "in", [
-                "Employee-Client",
-                "Vehicle-Client"
+                "Employee-Form",
+                "Vehicle-Form",
+                "Leave Application-Form"
             ]
         ]
     ]}
