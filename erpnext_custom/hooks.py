@@ -39,7 +39,8 @@ fixtures = [
                 "section_break_4",
                 "department",
                 "employee_number",
-                "staff_id"
+                "staff_id",
+                "branch"
             ]
         ]
     ]},
