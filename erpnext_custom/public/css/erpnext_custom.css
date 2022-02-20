@@ -1,3 +1,7 @@
-a[href="/app/accounting"] {
+/* .accounting {
+    display: none;
+} */
+
+a[value="Accounting"] {
     display: none;
 }
