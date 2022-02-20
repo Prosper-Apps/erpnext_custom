@@ -1,0 +1,5 @@
+{
+    "css/erpnext_custom.min.css": [
+        "public/css/erpnext_custom.css"
+    ]
+}
