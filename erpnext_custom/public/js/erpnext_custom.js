@@ -1,1 +1,3 @@
-$("a[href='/app/accounting']").hide();
+frappe.ready(() => {
+    $("a[href='/app/accounting']").hide();
+});
