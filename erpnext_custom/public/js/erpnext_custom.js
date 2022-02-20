@@ -1,3 +1,3 @@
 frappe.ready(() => {
-    $("a[href='/app/accounting']").hide();
+    $("a[href='/app/accounting']").addClass("accounting");
 });
