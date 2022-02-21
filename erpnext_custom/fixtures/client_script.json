@@ -1,1 +1,41 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee",
+  "enabled": 1,
+  "modified": "2022-02-19 20:45:27.089129",
+  "name": "Employee-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on(\"Employee\", {\n\trefresh(frm) {\n\t\tlet duration = moment.duration(moment().diff(cur_frm.doc.date_of_birth));\n        const formatDuration = (duration) => {\n            let years = duration.years();\n            let months= duration.months();\n            let days= duration.days();\n            let result = '';\n            if (years === 1) {\n                result += '1 year ';\n            } else if (years > 1) {\n                result += years + ' years ';\n            }\n            if (months === 1) {\n                result += '1 month ';\n            } else if (months > 1) {\n                result += months + ' months ';\n            }\n            if (days === 1) {\n                result += '1 day ';\n            } else if (days > 1) {\n                result += days + ' days ';\n            }\n            return result;\n        }\n        \n        cur_frm.set_value(\"age\", formatDuration(duration));\n        cur_frm.add_fetch('reports_to',  'employee_name',  'reports_to_name');\n        \n\t}\n\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Vehicle",
+  "enabled": 1,
+  "modified": "2021-06-16 08:37:08.285595",
+  "name": "Vehicle-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Vehicle', {\n\trefresh(frm) {\n\t\tcur_frm.add_fetch('employee', 'employee_name', 'employee_name');\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave Application",
+  "enabled": 1,
+  "modified": "2022-02-12 18:23:47.135260",
+  "name": "Leave Application-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "cur_frm.add_fetch('employee',  'branch',  'branch');",
+  "view": "Form"
+ }
+]
