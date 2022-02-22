@@ -559,5 +559,22 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Notification",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "subject",
+  "modified": "2022-02-22 09:33:02.987271",
+  "name": "Notification-subject-length",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "length",
+  "property_type": "Int",
+  "row_name": null,
+  "value": "300"
  }
 ]
