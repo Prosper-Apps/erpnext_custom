@@ -19,7 +19,8 @@ fixtures = [
                 "Leave Application",
                 "Leave Type",
                 "Training Event",
-                "Vehicle"
+                "Vehicle",
+                "Notification"
             ]
         ]
     ]},
