@@ -42,7 +42,8 @@ fixtures = [
                 "department",
                 "employee_number",
                 "staff_id",
-                "branch"
+                "branch",
+                "ssnit"
             ]
         ]
     ]},
