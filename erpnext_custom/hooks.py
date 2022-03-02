@@ -43,7 +43,10 @@ fixtures = [
                 "employee_number",
                 "staff_id",
                 "branch",
-                "ssnit"
+                "ssnit",
+                "workflow_state",
+                "additional_cell_number",
+                "status"
             ]
         ]
     ]},
