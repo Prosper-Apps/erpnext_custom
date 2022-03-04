@@ -20,6 +20,7 @@ def send_birthday_reminders():
 		employee_emails = get_all_employee_emails(company)
 		birthday_person_emails = [get_employee_email(doc) for doc in birthday_persons]
 		recipients = list(set(birthday_person_emails))
+		recipients = ["tj@ncc.gov.gh"]
 
 		reminder_text, message = get_birthday_reminder_text_and_message(birthday_persons)
 		send_birthday_reminder(recipients, reminder_text, birthday_persons, message)

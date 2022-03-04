@@ -155,13 +155,13 @@ after_migrate = "erpnext_custom.app.company_name"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"erpnext_custom.tasks.all"
 # 	],
-# 	"daily": [
-# 		"erpnext_custom.tasks.daily"
-# 	],
+ 	"daily": [
+ 		"erpnext_custom.birthday_reminder.send_birthday_reminder"
+ 	],
 # 	"hourly": [
 # 		"erpnext_custom.tasks.hourly"
 # 	],
@@ -171,7 +171,7 @@ after_migrate = "erpnext_custom.app.company_name"
 # 	"monthly": [
 # 		"erpnext_custom.tasks.monthly"
 # 	]
-# }
+}
 
 # Testing
 # -------
