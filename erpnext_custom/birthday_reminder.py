@@ -42,10 +42,12 @@ def get_birthday_reminder_text_and_message(birthday_persons):
 		person_names = [d['name'] for d in birthday_persons]
 		birthday_person_text = comma_sep(person_names, frappe._("{0} & {1}"), False)
 
-	reminder_text = _("Today is {0}'s birthday 🎉").format(birthday_person_text)
-	message = _("A friendly reminder of an important date for our team.")
+	reminder_text = _("{0}, today is your birthday 🎉").format(birthday_person_text)
+	message = _("The Director-General and the entire staff of the Commission wish you a happy birthday.")
 	message += "<br>"
-	message += _("Everyone, let’s congratulate {0} on their birthday.").format(birthday_person_text)
+	message = _("May the good LORD continue to bless you with long life and good health.")
+	message += "<br>"
+	message += _("Hope this special day brings you all that your heart desires.")
 
 	return reminder_text, message
 
