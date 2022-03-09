@@ -55,7 +55,8 @@ fixtures = [
             "name", "in", [
                 "Employee-Form",
                 "Vehicle-Form",
-                "Leave Application-Form"
+                "Leave Application-Form",
+                "Leave Application-List"
             ]
         ]
     ]}
