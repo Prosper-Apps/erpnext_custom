@@ -150,7 +150,15 @@ after_migrate = "erpnext_custom.app.company_name"
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-#	}
+#	},
+#   "Department": {
+# 	    "on_submit": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty",
+# 	    "on_cancel": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
+# 	    "after_insert": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
+# 	    "before_rename": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
+# 	    "on_update": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
+# 	    "on_trash": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
+#   }
 # }
 
 # Scheduled Tasks
@@ -161,7 +169,7 @@ scheduler_events = {
 # 		"erpnext_custom.tasks.all"
 # 	],
  	"daily": [
- 		"erpnext_custom.birthday_reminder.send_birthday_reminder"
+ 		"erpnext_custom.birthday_reminder.send_birthday_reminders"
  	],
 # 	"hourly": [
 # 		"erpnext_custom.tasks.hourly"
