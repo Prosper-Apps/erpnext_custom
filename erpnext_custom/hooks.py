@@ -145,7 +145,7 @@ after_migrate = "erpnext_custom.app.company_name"
 # ---------------
 # Hook on document methods and events
 
- doc_events = {
+doc_events = {
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
