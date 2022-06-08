@@ -46,7 +46,13 @@ fixtures = [
                 "ssnit",
                 "workflow_state",
                 "additional_cell_number",
-                "status"
+                "status",
+                "ghanacard_details",
+                "personal_id_number",
+                "document_number",
+                "column_break_83",
+                "ghanacard_date_of_issuance",
+                "ghanacard_date_of_expiry"
             ]
         ]
     ]},
