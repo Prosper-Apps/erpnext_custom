@@ -31,7 +31,7 @@ from erpnext.hr.utils import (
 	validate_active_employee,
 )
 
-def on_submit(self):
+def after_approval(self):
     if self.status == "Open":
         frappe.throw(_("Only Leave Applications with status 'Approved' and 'Rejected' can be submitted"))
         
