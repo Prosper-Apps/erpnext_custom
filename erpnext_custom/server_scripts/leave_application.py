@@ -40,7 +40,6 @@ def after_approval(self):
 	# notify leave applier about approval
     if frappe.db.get_single_value("HR Settings", "send_leave_notification"):
         self.notify_employee()
-    
     self.create_leave_ledger_entry()
     self.reload()
 
