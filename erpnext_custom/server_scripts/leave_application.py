@@ -32,8 +32,6 @@ from erpnext.hr.utils import (
 )
 
 def after_approval(self):
-    
-        
     self.validate_back_dated_application()
 
 	# notify leave applier about approval
