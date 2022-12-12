@@ -31,8 +31,8 @@ from erpnext.hr.utils import (
 	validate_active_employee,
 )
 
-def after_approval():
-    if self.status == "Open":
+def after_approval(doc):
+    if doc.status == "Open":
         frappe.throw(_("Only Leave Applications with status 'Approved' and 'Rejected' can be submitted"))
         
     self.validate_back_dated_application()
