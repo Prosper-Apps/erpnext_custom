@@ -165,15 +165,15 @@ doc_events = {
 # 	    "on_update": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 # 	    "on_trash": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 #   },
-#    "Leave Application": {
-# 	    "on_submit": "erpnext_custom.server_scripts.leave_application.after_approval"
+    "Leave Application": {
+ 	    "on_submit": "erpnext_custom.server_scripts.leave_application.after_approval"
 # 	    "on_cancel": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 # 	    "after_insert": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 # 	    "before_rename": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 # 	    "on_update": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
 # 	    "on_trash": "erpnext.stock.doctype.material_request.material_request.update_completed_and_requested_qty"
    }
-# }
+}
 
 # Scheduled Tasks
 # ---------------
