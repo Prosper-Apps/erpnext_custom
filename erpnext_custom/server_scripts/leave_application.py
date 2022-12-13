@@ -30,6 +30,7 @@ from erpnext.hr.utils import (
 	share_doc_with_approver,
 	validate_active_employee,
 )
+from frappe.model.document import Document
 
 class LeaveApplication(Document):
     def after_approval(self):
