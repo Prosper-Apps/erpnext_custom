@@ -31,17 +31,17 @@ from erpnext.hr.utils import (
 	validate_active_employee,
 )
 
-def after_approval(self, app):
-    if app.status in ["Open", "Cancelled"]:
+def after_approval(self):
+    if self.status in ["Open", "Cancelled"]:
         frappe.throw(_("Only Leave Applications with status 'Approved' and 'Rejected' can be submitted"))
         
-    app.validate_back_dated_application()
+    self.validate_back_dated_application()
 
 	# notify leave applier about approval
     if frappe.db.get_single_value("HR Settings", "send_leave_notification"):
-        app.notify_employee()
-    app.create_leave_ledger_entry()
-    app.reload()
+        self.notify_employee()
+    self.create_leave_ledger_entry()
+    self.reload()
 
 def validate_back_dated_application(self):
     future_allocation = frappe.db.sql("""select name, from_date from `tabLeave Allocation`
